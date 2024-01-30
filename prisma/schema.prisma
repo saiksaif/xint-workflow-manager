@@ -37,3 +37,27 @@ model FormSubmissions {
 
   content String
 }
+
+model PatnersModels {
+  id         Int      @id @default(autoincrement())
+  createdAt  DateTime @default(now())
+  patnerName String
+  imageUrl   String
+  code       String
+}
+
+model YakeenData {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  nid       String
+  dob       String
+  data      Json
+}
+
+model YakeenDataTwo {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  nid       String
+  licexpiry String
+  data      Json
+}
